@@ -1,0 +1,66 @@
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java集合</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/prism/prism.css">
+</head>
+<body>
+    <h2>Java集合</h2>
+    <p>你可能用过ArrayList来解决编程问题，Java提供了很多开发者必不可少的集合类。我们来看看吧！</p>
+    <img src="./Pictures/Collection Heirarchy.png">
+    <p>有这么多的集合! 不要紧张. 咱们把每一个都看一遍. 都看完了, 你就会感觉到对他们更熟悉了。</p>
+    <h3>Collections和Map</h3>  
+    <p>Java集合有2个最基础的接口: Collections和Map. Collections中都是单个元素的list/set. Map都是键值对.</p>
+    <p>我们经常这么写代码:</p>
+    <p>List<Integer> myList = new ArrayList<>();</p>
+    <p>上面这行代码创建了一个新的ArrayList对象，并把它复制给List变量. 我们之所以这么写, 是因为如果我们以后想用其他的List实现类，我们可以方便的改代码.</p>
+    <p>因为Collections是所有集合的接口, 它的所有方法都能在子类中调用. 下面是一些常有的方法:</p>
+    <table>
+        <tr>
+            <th style="background-color: lightblue">methods</th>
+            <th style="background-color: lightblue">Descriptions</th>
+        </tr>
+        <tr>
+            <td>public boolean add(E e)</td>
+            <td>在集合中添加一个元素</td>
+        </tr>
+        <tr>
+            <td>public void clear()</td>
+            <td>删除集合中的所有元素</td>
+        </tr>
+        <tr>
+            <td>public boolean remove(E e)</td>
+            <td>删除集合中的一个元素</td>
+        </tr>
+        <tr>
+            <td>public boolean contains(Object obj)</td>
+            <td>如果集合中有这个元素，就返回true</td>
+        </tr>
+        <tr>
+            <td>public boolean isEmpty()</td>
+            <td>如果集合中是空的，就返回true</td>
+        </tr>
+        <tr>
+            <td>public int size()</td>
+            <td>返回集合中元素的个数</td>
+        </tr>
+        <tr>
+            <td>public Object[] toArray()</td>
+            <td>以数组的形式返回集合的所有元素</td>
+        </tr>
+    </table>
+
+    <!-- Code snippet with the special code snippet window appearance -->
+    <pre><code class="language-java">public class HelloWorld {
+        public static void main(String[] args) {
+            System.out.println("Hello, World!");
+        }
+    }</code></pre>
+
+
+    <a href="./index_zh.html">返回</a>
+    <script src="js/prism/prism.js"></script>
+</body>
+</html>
